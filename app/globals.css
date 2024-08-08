@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +30,94 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+.angled-rectangle {
+  clip-path: polygon(0% 0, 100% 0, 85% 100%, 15% 100%);
+}
+
+.next-gen {
+  font-size: 110px;
+  font-weight: 700;
+  line-height: 133.13px;
+  text-align: left;
+}
+
+.virtual-reality {
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 84.72px;
+  text-align: left;
+  background: linear-gradient(90.26deg, #0C98B7 25.51%, #FF0AE6 88.98%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description {
+  width: 624px;
+  height: 144px;
+  top: 392px;
+  left: 59px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24.2px;
+  text-align: left;
+}
+
+.see-more-btn {
+  width: 156px;
+  height: 58px;
+  top: 563px;
+  left: 59px;
+  gap: 0px;
+  border-radius: 50px;
+  opacity: 0px;
+  background: linear-gradient(90deg, #0C98B7 0%, #EE1DD9 91.99%);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.2px;
+}
+
+.grid-background {
+  background-size: 50px 50px;
+  background-image:
+    linear-gradient(to right, rgba(225, 225, 225, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(225, 225, 225, 0.1) 1px, transparent 1px);
+}
+
+.explore-text {
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 65px;
+  text-align: left;
+  background: linear-gradient(90.26deg, #0C98B7 25.51%, #FF0AE6 88.98%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.playnow-btn {
+  width: Fixed (156px)px;
+  height: Fixed (58px)px;
+  padding: 17px 25px 17px 25px;
+  border-radius: 50px;
+  opacity: 0px;
+  background: linear-gradient(90deg, #0C98B7 0%, #EE1DD9 91.99%);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.2px;
+}
+
+.touch-the-reality {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: left;
+  background: linear-gradient(90.26deg, #0C98B7 25.51%, #FF0AE6 88.98%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
