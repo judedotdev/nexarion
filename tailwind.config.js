@@ -16,8 +16,6 @@ module.exports = {
       },
       boxShadow: {
         "custom-inset-1": "inset -75.83px 75.83px 75.83px 0px rgba(255, 255, 255, 0.1)",
-        "custom-inset-2": "inset 75.83px -75.83px 75.83px 0px rgba(165, 165, 165, 0.1)",
-        "custom-inset-3": "inset 0px -1px 0px 0px rgba(212, 212, 212, 0.57)",
       },
     },
   },

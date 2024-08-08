@@ -27,13 +27,13 @@ export default function Home() {
             <div className="ml-16 mt-32">
               <div className="next-gen">NEXT GEN</div>
               <div className="virtual-reality">VIRTUAL REALITY</div>
-              <div className="description mt-5">
+              <div className="hero-description mt-5">
                 Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
                 dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
                 risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
                 Maecenas eget condimentum velit, sit amet feugiat lectus.
               </div>
-              <button className="see-more-btn mt-2">See More</button>
+              <button className="see-more-btn bg-custom-gradient-2 mt-2">See More</button>
             </div>
 
             {/* RIGHT */}
@@ -81,7 +81,7 @@ export default function Home() {
               sit amet feugiat lectus.
             </div>
             <div className="flex flex-row space-x-8 mt-8 items-center text-center text-white">
-              <button className="playnow-btn">Play Now</button>
+              <button className="playnow-btn bg-custom-gradient-2">Play Now</button>
               <button><GoPlay className="text-5xl" /></button>
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function Home() {
               sit amet feugiat lectus.
             </div>
             <div className="flex flex-row space-x-8 mt-8 items-center text-center text-white">
-              <button className="playnow-btn">Play Now</button>
+              <button className="playnow-btn bg-custom-gradient-2">Play Now</button>
               <button><GoPlay className="text-5xl" /></button>
             </div>
           </div>
