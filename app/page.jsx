@@ -11,29 +11,29 @@ export default function Home() {
       <div className="flex flex-col max-w-[1440px] mx-auto">
         {/* HERO */}
         <div className="mt-2 w-[1395px] h-[680px] rounded-t-3xl opacity-90 border border-[#FFFFFF7D] bg-[#D9D9D91A] shadow-custom-inset-1">
-          <div className="flex flex-row justify-center text-white font-semibold text-base space-x-24">
-            <div className="flex flex-row justify-center text-white font-semibold text-base space-x-24 mt-2">
+          <div className="flex flex-row justify-center font-semibold text-base space-x-24">
+            <div className="flex flex-row justify-center font-semibold text-base space-x-24 mt-2">
               <Link href="/">HOME</Link>
               <Link href="#products">PRODUCTS</Link>
             </div>
             <Image src="/fantasy_light_set.png" alt="fantasy light set" width={120} height={32} className="bg-[#110B2C] angled-rectangle items-center mt-0 w-[180px] h-[48px]" />
-            <div className="flex flex-row justify-center text-white font-semibold text-base space-x-24 mt-2">
+            <div className="flex flex-row justify-center font-semibold text-base space-x-24 mt-2">
               <Link href="#services">SERVICES</Link>
               <Link href="#contact">CONTACT</Link>
             </div>
           </div>
-          <div className="flex flex-row text-white justify-between">
+          <div className="flex flex-row justify-between">
             {/* LEFT */}
             <div className="ml-16 mt-32">
               <div className="next-gen">NEXT GEN</div>
               <div className="virtual-reality">VIRTUAL REALITY</div>
-              <div className="hero-description text-white mt-5">
+              <div className="hero-description mt-5">
                 Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
                 dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
                 risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
                 Maecenas eget condimentum velit, sit amet feugiat lectus.
               </div>
-              <button className="see-more-btn bg-custom-gradient-2 text-white mt-2">See More</button>
+              <button className="see-more-btn bg-custom-gradient-2 mt-2">See More</button>
             </div>
 
             {/* RIGHT */}
@@ -48,7 +48,7 @@ export default function Home() {
         {/* END HERO */}
 
         {/* VR Images */}
-        <div className="w-[1278px] mt-32 flex flex-row justify-center space-x-48 items-center mx-auto text-white font-semibold text-xl">
+        <div className="w-[1278px] mt-32 flex flex-row justify-center space-x-48 items-center mx-auto font-semibold text-xl">
           <div className="flex flex-col items-center text-center space-y-8">
             <Image src="/vr_1.png" alt="Gear VR Headset" width={365} height={400} className="items-center mt-0 w-[244px] h-[267px]" />
             <p>Gear VR Headset</p>
@@ -64,7 +64,7 @@ export default function Home() {
         </div>
 
         {/* Explore The Metaverse */}
-        <div className="w-[1306px] my-28 flex flex-row justify-center mx-auto space-x-64 text-white">
+        <div className="w-[1306px] my-28 flex flex-row justify-center mx-auto space-x-64 ">
           {/* Image */}
           <Image src="/explore.png" alt="explore in the metaverse" width={403} height={436} className="items-center w-[269px] h-[291px]" />
 
@@ -80,8 +80,8 @@ export default function Home() {
               ut interdum tellus elit sed risus. Maecenas eget condimentum velit,
               sit amet feugiat lectus.
             </div>
-            <div className="flex flex-row space-x-8 mt-8 items-center text-center text-white">
-              <button className="playnow-btn bg-custom-gradient-2 text-white">Play Now</button>
+            <div className="flex flex-row space-x-8 mt-8 items-center text-center ">
+              <button className="playnow-btn bg-custom-gradient-2 ">Play Now</button>
               <button><GoPlay className="text-5xl" /></button>
             </div>
           </div>
@@ -90,7 +90,7 @@ export default function Home() {
         {/* Touch the Reality */}
         <div className="w-[1308px] flex flex-row justify-center mx-auto mb-28 space-x-14">
           {/* Text */}
-          <div className="flex flex-col text-white">
+          <div className="flex flex-col ">
             <div className="touch-the-reality">Touch the Reality</div>
             <div className="text-base mt-4 w-[643px]">
               Vorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -99,8 +99,8 @@ export default function Home() {
               ut interdum tellus elit sed risus. Maecenas eget condimentum velit,
               sit amet feugiat lectus.
             </div>
-            <div className="flex flex-row space-x-8 mt-8 items-center text-center text-white">
-              <button className="playnow-btn bg-custom-gradient-2 text-white">Play Now</button>
+            <div className="flex flex-row space-x-8 mt-8 items-center text-center ">
+              <button className="playnow-btn bg-custom-gradient-2 ">Play Now</button>
               <button><GoPlay className="text-5xl" /></button>
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function Home() {
         </div>
 
         {/* Subscribe to NewsLetter */}
-        <div className="flex flex-col mx-auto w-[676px] h-[235px] mb-32 border-[3.5px] rounded-3xl border-[#FF0AE6] text-white items-center text-center">
+        <div className="flex flex-col mx-auto w-[676px] h-[235px] mb-32 border-[3.5px] rounded-3xl border-[#FF0AE6] items-center text-center">
           <div className="mt-6 font-semibold text-2xl">SUBSCRIBE TO OUR NEWSLETTER</div>
           <div className="mt-4 w-[460px] text-sm">Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
           <div className="flex flex-row mt-8">
@@ -120,7 +120,7 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <div className="flex flex-col mx-auto w-[1350px] text-white items-center text-center mb-6">
+        <div className="flex flex-col mx-auto w-[1350px] items-center text-center mb-6">
           <div className="flex flex-row space-x-28 font-semibold">
             <Link href="#help">Help</Link>
             <Link href="#about">About Us</Link>

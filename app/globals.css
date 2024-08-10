@@ -30,8 +30,6 @@
   top: 392px;
   left: 59px;
   gap: 0px;
-  /* opacity: 0px; */
-  opacity: 1;
   font-size: 20px;
   font-weight: 300;
   line-height: 24.2px;
@@ -46,8 +44,6 @@
   left: 59px;
   gap: 0px;
   border-radius: 50px;
-  /* opacity: 0px; */
-  opacity: 1;
   background: linear-gradient(90deg, #0C98B7 0%, #EE1DD9 91.99%);
   font-size: 20px;
   font-weight: 600;
@@ -74,14 +70,10 @@
 }
 
 .playnow-btn {
-  /* width: Fixed (156px)px;
-  height: Fixed (58px)px; */
   width: 156px;
   height: 58px;
   padding: 17px 25px 17px 25px;
   border-radius: 50px;
-  /* opacity: 0px; */
-  opacity: 1;
   background: linear-gradient(90deg, #0C98B7 0%, #EE1DD9 91.99%);
   font-size: 20px;
   font-weight: 600;
