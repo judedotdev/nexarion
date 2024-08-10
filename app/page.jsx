@@ -7,7 +7,7 @@ import { FaTwitter, FaFacebook, FaYoutube, FaInstagram } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center bg-[#100425]">
+    <main className="flex min-h-screen flex-col items-center bg-[#100425] text-white">
       <div className="flex flex-col max-w-[1440px] mx-auto">
         {/* HERO */}
         <div className="mt-2 w-[1395px] h-[680px] rounded-t-3xl opacity-90 border border-[#FFFFFF7D] bg-[#D9D9D91A] shadow-custom-inset-1">
