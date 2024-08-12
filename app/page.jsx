@@ -1,14 +1,25 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { GoPlay } from "react-icons/go";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { GrApple } from "react-icons/gr";
 import { FaTwitter, FaFacebook, FaYoutube, FaInstagram } from "react-icons/fa";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { useState } from "react";
 
 export default function Home() {
+  const [showMenu, setShowMenu] = useState(false);
+  function toggleMenu() {
+    setShowMenu(!showMenu);
+  }
+  function getCurrentYear() {
+    return new Date().getFullYear();
+  }
   return (
     <main className="flex min-h-screen flex-col items-center bg-[#100425] text-white">
-      <div className="flex flex-col max-w-[1440px] mx-auto">
+      {/* Desktop Screen */}
+      <div className="hidden md:flex flex-col max-w-[1440px] mx-auto">
         {/* HERO */}
         <div className="mt-2 w-[1395px] h-[680px] rounded-t-3xl opacity-90 border border-[#FFFFFF7D] bg-[#D9D9D91A] shadow-custom-inset-1">
           <div className="flex flex-row justify-center font-semibold text-base space-x-24">
@@ -26,14 +37,14 @@ export default function Home() {
             {/* LEFT */}
             <div className="ml-16 mt-32">
               <div className="next-gen">NEXT GEN</div>
-              <div className="virtual-reality">VIRTUAL REALITY</div>
+              <div className="virtual-reality-bg virtual-reality-text">VIRTUAL REALITY</div>
               <div className="hero-description mt-5">
                 Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
                 dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
                 risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
                 Maecenas eget condimentum velit, sit amet feugiat lectus.
               </div>
-              <button className="see-more-btn bg-custom-gradient-2 mt-2">See More</button>
+              <button className="see-more-btn mt-2">See More</button>
             </div>
 
             {/* RIGHT */}
@@ -81,7 +92,7 @@ export default function Home() {
               sit amet feugiat lectus.
             </div>
             <div className="flex flex-row space-x-8 mt-8 items-center text-center ">
-              <button className="playnow-btn bg-custom-gradient-2 ">Play Now</button>
+              <button className="playnow-btn">Play Now</button>
               <button><GoPlay className="text-5xl" /></button>
             </div>
           </div>
@@ -100,7 +111,7 @@ export default function Home() {
               sit amet feugiat lectus.
             </div>
             <div className="flex flex-row space-x-8 mt-8 items-center text-center ">
-              <button className="playnow-btn bg-custom-gradient-2 ">Play Now</button>
+              <button className="playnow-btn">Play Now</button>
               <button><GoPlay className="text-5xl" /></button>
             </div>
           </div>
@@ -174,6 +185,138 @@ export default function Home() {
         </div>
         {/* END Footer */}
       </div>
+      {/* END Desktop Screen */}
+
+      {/* Small Screen / Mobile Devices */}
+      <div className="container mx-auto px-4 flex md:hidden flex-col text-white">
+        {/* NAV */}
+        <div className="flex flex-col">
+          <div className="flex flex-row justify-between items-center text-center mt-4 px-2">
+            <Link href="/" className="text-2xl font-bold">NEXARION</Link>
+            {/* Mobile Button */}
+            <div onClick={toggleMenu} className="flex md:hidden z-20 items-center">
+              {showMenu ? <AiOutlineClose size={36} /> : <AiOutlineMenu size={36} />}
+            </div>
+          </div>
+          {/* Mobile Menu */}
+          <>
+            {showMenu &&
+              <div className="flex flex-col px-2 mt-2 space-y-2">
+                <Link href="/">Home</Link>
+                <Link href="#products">Products</Link>
+                <Link href="#services">Services</Link>
+                <Link href="#contact">Contact</Link>
+              </div>
+            }
+          </>
+          {/* END Mobile menu */}
+        </div>
+
+        <div className="flex flex-col mt-20 pl-2">
+          <div className="text-5xl font-bold">NEXT GEN</div>
+          <div className="virtual-reality-bg text-3xl font-semibold mt-2">VIRTUAL REALITY</div>
+          <div className="text-sm mt-3">
+            Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
+            dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
+            risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
+            Maecenas eget condimentum velit, sit amet feugiat lectus.
+          </div>
+          <button className="see-more-btn-mobile rounded-full w-24 h-10 font-bold mt-3">Play Now</button>
+        </div>
+
+        {/* VR Images */}
+        <div className="flex flex-col mt-14 items-center text-center justify-center mx-auto font-semibold text-xl space-y-10">
+          <div className="flex flex-col items-center text-center space-y-5">
+            <Image src="/vr_1.png" alt="Gear VR Headset" width={365} height={400} className="items-center mt-0 w-[365px] h-[400px]" />
+            <p>Gear VR Headset</p>
+          </div>
+          <div className="flex flex-col items-center text-center space-y-5">
+            <Image src="/vr_2.png" alt="Smart VR Headset" width={280} height={310} className="items-center mt-0 w-[280px] h-[310px]" />
+            <p>Smart VR Headset</p>
+          </div>
+          <div className="flex flex-col items-center text-center space-y-5">
+            <Image src="/vr_3.png" alt="Play Station VR" width={365} height={400} className="items-center mt-0 w-[365px] h-[400px]" />
+            <p>Play Station VR</p>
+          </div>
+        </div>
+
+        <div className="w-90 ml-2 flex flex-col mt-10">
+          <div className="flex flex-row w-80">
+            <p className="explore-bg font-extrabold text-2xl">Touch the Reality</p>
+          </div>
+          <div className="text-base mt-4 w-90">
+            Vorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Etiam eu turpis molestie, dictum est a, mattis tellus.
+            Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus,
+            ut interdum tellus elit sed risus. Maecenas eget condimentum velit,
+            sit amet feugiat lectus.
+          </div>
+          <div className="flex flex-row space-x-7 mt-4 items-center text-center ">
+            <button className="playnow-btn-bg text-lg font-semibold">Play Now</button>
+            <button><GoPlay className="text-4xl" /></button>
+          </div>
+        </div>
+
+        {/* NewsLetter Mobile */}
+        <div className="flex flex-col mx-auto mt-12 sm:mt-20 w-96 sm:w-5/6 h-60 mb-20 border-[3.5px] rounded-3xl border-[#FF0AE6] items-center text-center">
+          <div className="mt-6 font-semibold text-lg">SUBSCRIBE TO OUR NEWSLETTER</div>
+          <div className="mt-4 w-80 text-sm">Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
+          <div className="flex flex-row mt-8 w-80 justify-center mx-auto">
+            <input className="bg-transparent border-2 border-[#FF0AE6] rounded-l-full w-60 pl-5"></input>
+            <button className="bg-[#FF0AE6] rounded-r-full py-3 px-4 font-semibold">Subscribe</button>
+          </div>
+        </div>
+
+        {/* Footer Mobile */}
+        <div className="flex flex-col px-4 mb-4">
+          <div className="flex flex-row font-bold text-lg">NEXARION</div>
+
+          <div className="flex flex-row justify-between mt-10">
+            <div className="flex flex-col">
+              <p className="font-bold explore-bg text-lg">Menu</p>
+              <div className="flex flex-col mt-3 space-y-2">
+                <Link href="#help">Help</Link>
+                <Link href="#about">About Us</Link>
+                <Link href="#company">Company</Link>
+                <Link href="#services">Services</Link>
+                <Link href="#contact">Contact</Link>
+              </div>
+            </div>
+
+            <div className="flex flex-col">
+              <p className="font-bold explore-bg text-lg">Legal</p>
+              <div className="flex flex-col mt-3 space-y-2">
+                <Link href="#terms">Terms</Link>
+                <Link href="#privacy">Privacy</Link>
+                <Link href="#condition">Condition</Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col mt-6">
+            <p className="font-bold explore-bg text-lg">Download App</p>
+            <div className="flex flex-col mt-3 space-y-2">
+              <Link href="#playstore">Get it on Google Play</Link>
+              <Link href="#appstore">Download on the iOS Appstore</Link>
+            </div>
+          </div>
+
+          <div className="flex flex-col mt-8">
+            <p className="font-bold explore-bg text-lg">Socials</p>
+            <div className="flex flex-row space-x-4 mt-2">
+              <Link href="#twitter"><FaTwitter className="text-lg" /></Link>
+              <Link href="#facebook"><FaFacebook className="text-lg" /></Link>
+              <Link href="#youtube"><FaYoutube className="text-lg" /></Link>
+              <Link href="#instagram"><FaInstagram className="text-lg" /></Link>
+            </div>
+          </div>
+
+          <div className="flex flex-row justify-center items-center text-center mt-10">
+            <p>&copy; {getCurrentYear()} NEXARION. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+      {/* END Small Screen / Mobile Devices */}
     </main>
   );
 }

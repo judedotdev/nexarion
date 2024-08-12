@@ -13,15 +13,18 @@
   text-align: left;
 }
 
-.virtual-reality {
-  font-size: 70px;
-  font-weight: 500;
-  line-height: 84.72px;
+.virtual-reality-bg {
   text-align: left;
   background: linear-gradient(90.26deg, #0C98B7 25.51%, #FF0AE6 88.98%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.virtual-reality-text {
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 84.72px;
 }
 
 .hero-description {
@@ -51,6 +54,12 @@
   color: white;
 }
 
+.see-more-btn-mobile {
+  border-radius: 50px;
+  background: linear-gradient(90deg, #0C98B7 0%, #EE1DD9 91.99%);
+  color: white;
+}
+
 .grid-background {
   background-size: 50px 50px;
   background-image:
@@ -69,6 +78,14 @@
   -webkit-text-fill-color: transparent;
 }
 
+.explore-bg {
+  text-align: left;
+  background: linear-gradient(90.26deg, #0C98B7 25.51%, #FF0AE6 88.98%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .playnow-btn {
   width: 156px;
   height: 58px;
@@ -78,6 +95,13 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 24.2px;
+  color: white;
+}
+
+.playnow-btn-bg {
+  padding: 12px 20px 12px 20px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #0C98B7 0%, #EE1DD9 91.99%);
   color: white;
 }
 
