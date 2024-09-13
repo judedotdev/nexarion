@@ -39,10 +39,10 @@ export default function Home() {
               <div className="next-gen">NEXT GEN</div>
               <div className="virtual-reality-bg virtual-reality-text">VIRTUAL REALITY</div>
               <div className="hero-description mt-5">
-                Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
-                dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
-                risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
-                Maecenas eget condimentum velit, sit amet feugiat lectus.
+                Experience the future of immersive technology with Nexarion.
+                Dive into worlds beyond imagination, where cutting-edge virtual reality transforms how you interact,
+                explore, and create. Discover new dimensions in entertainment, education,
+                and innovation with seamless integration of the digital and physical realms.
               </div>
               <button className="see-more-btn mt-2">See More</button>
             </div>
@@ -85,11 +85,10 @@ export default function Home() {
               <p className="explore-text">Explore in the metaverse one pixel at a time</p>
             </div>
             <div className="text-base mt-4">
-              Vorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Etiam eu turpis molestie, dictum est a, mattis tellus.
-              Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus,
-              ut interdum tellus elit sed risus. Maecenas eget condimentum velit,
-              sit amet feugiat lectus.
+              Step into boundless digital realms where every pixel unlocks new possibilities.
+              Immerse yourself in a universe that evolves with every interaction,
+              blending reality and imagination in a seamless virtual experience.
+              Uncover endless opportunities to connect, create, and explore in the vast metaverse.
             </div>
             <div className="flex flex-row space-x-8 mt-8 items-center text-center ">
               <button className="playnow-btn">Play Now</button>
@@ -104,11 +103,10 @@ export default function Home() {
           <div className="flex flex-col ">
             <div className="touch-the-reality">Touch the Reality</div>
             <div className="text-base mt-4 w-[643px]">
-              Vorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Etiam eu turpis molestie, dictum est a, mattis tellus.
-              Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus,
-              ut interdum tellus elit sed risus. Maecenas eget condimentum velit,
-              sit amet feugiat lectus.
+              Step beyond the physical and immerse yourself in a world where virtual meets tangible.
+              With cutting-edge technology, you can feel, see, and interact with environments
+              that blur the lines between the real and the virtual.
+              Dive into a new dimension of reality, crafted just for you.
             </div>
             <div className="flex flex-row space-x-8 mt-8 items-center text-center ">
               <button className="playnow-btn">Play Now</button>
@@ -123,7 +121,12 @@ export default function Home() {
         {/* Subscribe to NewsLetter */}
         <div className="flex flex-col mx-auto w-[676px] h-[235px] mb-32 border-[3.5px] rounded-3xl border-[#FF0AE6] items-center text-center">
           <div className="mt-6 font-semibold text-2xl">SUBSCRIBE TO OUR NEWSLETTER</div>
-          <div className="mt-4 w-[460px] text-sm">Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
+          <div className="mt-4 w-[460px] text-sm">
+            Stay at the forefront of virtual reality innovation.
+            Get the latest updates on cutting-edge technology,
+            immersive experiences, and exclusive
+            insights delivered right to your inbox.
+          </div>
           <div className="flex flex-row mt-8">
             <input className="bg-transparent border-2 border-[#FF0AE6] rounded-l-full w-80 pl-5"></input>
             <button className="bg-[#FF0AE6] rounded-r-full py-3 px-8">Subscribe</button>
@@ -141,10 +144,9 @@ export default function Home() {
           </div>
           <div className="flex flex-row mt-12 font-semibold text-2xl">Download our App</div>
           <div className="flex flex-row w-[464px] text-sm mt-6">
-            Horem ipsum dolor sit amet, consectetur adipiscing elit.
-            Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-            per inceptos himenaeos.
+            Immerse yourself in the future of virtual reality.
+            Experience cutting-edge VR technology right
+            from your device. Download now and step into a new dimension.
           </div>
 
           {/* Download Buttons */}
@@ -216,10 +218,10 @@ export default function Home() {
           <div className="text-5xl font-bold">NEXT GEN</div>
           <div className="virtual-reality-bg text-3xl font-semibold mt-2">VIRTUAL REALITY</div>
           <div className="text-sm mt-3">
-            Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
-            dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan,
-            risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
-            Maecenas eget condimentum velit, sit amet feugiat lectus.
+            Experience the future of immersive technology with Nexarion.
+            Dive into worlds beyond imagination, where cutting-edge virtual reality transforms how you interact,
+            explore, and create. Discover new dimensions in entertainment, education,
+            and innovation with seamless integration of the digital and physical realms.
           </div>
           <button className="see-more-btn-mobile rounded-full w-24 h-10 font-bold mt-3">Play Now</button>
         </div>
@@ -245,11 +247,10 @@ export default function Home() {
             <p className="explore-bg font-extrabold text-2xl">Touch the Reality</p>
           </div>
           <div className="text-base mt-4 w-90">
-            Vorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Etiam eu turpis molestie, dictum est a, mattis tellus.
-            Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus,
-            ut interdum tellus elit sed risus. Maecenas eget condimentum velit,
-            sit amet feugiat lectus.
+            Step beyond the physical and immerse yourself in a world where virtual meets tangible.
+            With cutting-edge technology, you can feel, see, and interact with environments
+            that blur the lines between the real and the virtual.
+            Dive into a new dimension of reality, crafted just for you.
           </div>
           <div className="flex flex-row space-x-7 mt-4 items-center text-center ">
             <button className="playnow-btn-bg text-lg font-semibold">Play Now</button>
@@ -260,7 +261,12 @@ export default function Home() {
         {/* NewsLetter Mobile */}
         <div className="flex flex-col mx-auto mt-12 sm:mt-20 w-96 sm:w-5/6 h-60 mb-20 border-[3.5px] rounded-3xl border-[#FF0AE6] items-center text-center">
           <div className="mt-6 font-semibold text-lg">SUBSCRIBE TO OUR NEWSLETTER</div>
-          <div className="mt-4 w-80 text-sm">Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</div>
+          <div className="mt-4 w-80 text-sm">
+            Stay at the forefront of virtual reality innovation.
+            Get the latest updates on cutting-edge technology,
+            immersive experiences, and exclusive
+            insights delivered right to your inbox.
+          </div>
           <div className="flex flex-row mt-8 w-80 justify-center mx-auto">
             <input className="bg-transparent border-2 border-[#FF0AE6] rounded-l-full w-60 pl-5"></input>
             <button className="bg-[#FF0AE6] rounded-r-full py-3 px-4 font-semibold">Subscribe</button>
